@@ -1,10 +1,13 @@
 <?php
 
 $authorID = $_SESSION['user_id'];
-if ($for_admin == true) {
-    $uploadDir ='../upload/uploads/' . $authorID . '/';
+if (isset($for_admin)) {
+    if($for_admin == true){
+        $uploadDir ='../upload/uploads/' . $authorID . '/';
+    }
 }else { 
-    $uploadDir ='upload/uploads/' . $authorID . '/'; }
+    $uploadDir ='upload/uploads/' . $authorID . '/';
+} 
   
 
 // Create the directory if it doesn't exist
@@ -56,7 +59,7 @@ if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
         throw new Exception('Failed to move uploaded file.');
     }
 
-    // Success: you can store $destination (or path relative to doc‐root) in DB
+    // Success
     $imagePath = $authorID . '/' . $uniqueName;
     
 }

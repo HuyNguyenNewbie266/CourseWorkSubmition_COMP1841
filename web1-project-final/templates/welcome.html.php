@@ -47,7 +47,7 @@
                   <br>
     <!-- Video -->
     <video id="welcomeVideo" class="w-100 rounded-4 shadow" autoplay muted loop playsinline style="transform: scale(1.1); transform-origin: center;">
-        <source src="http://localhost/COMP1841/web1-project/videos/welcome.mp4" type="video/mp4">
+        <source src="../videos/welcome.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 

@@ -15,7 +15,7 @@
                         You're ready to <span class="font-weight-bold text-primary">ask a course-related question</span> and this form will help guide you through the process.
                     </p>
                     <p class="mb-4">
-                        Looking to ask a non-course question? Contact your instructor or check <a href="/help" class="text-primary">the help section</a>.
+                        Looking to ask a non-course question? Contact your instructor or check the help section.
                     </p>
                     <div>
                         <p class="font-weight-bold mb-2">Steps:</p>
@@ -162,4 +162,5 @@ document.getElementById('question-form').addEventListener('submit', function(eve
         return;
     }
 });
+
 </script>
